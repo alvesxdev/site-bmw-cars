@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@200;300;400;500&display=swap");
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background: linear-gradient(90deg, #000000 0%, #0f0f0f 100%);
+  z-index: 1;
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    87deg,
+    rgba(149, 114, 252, 1) 0%,
+    rgba(67, 231, 173, 1) 50%,
+    rgba(226, 212, 92, 1) 100%
+  );
+  z-index: -1;
+  border-radius: 4px;
+  top: 0;
+}
+
+.container-menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 10px;
+}
+
+.menu-section {
+  margin: 20px;
+  display: flex;
+  transition: 0.3s;
+}
+
+.menu-section nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 2rem;
+  padding: 5px 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu-section nav ul li:hover {
+  transform: scale(1.1);
+}
+
+.menu-section nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.123);
+  border-radius: 8px;
+  transform: scale(1.1);
+}
+
+.btn-login li a {
+  font-size: 1.7rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #ffff;
+  border: 2px solid rgb(113, 0, 206);
+  border-radius: 50px;
+  padding: 5px 15px;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  transform: scale(1.1);
+}
+
+.btn-login li a:hover {
+  background-color: rgba(255, 255, 255, 0.082);
+}
+
+/* //SESSAO DOS CARROS// */
+
+.containerproje {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerproje h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #ffff;
+  margin-top: 7%;
+  text-align: center;
+  position: relative;
+}
+
+.containerproje h1::before {
+  content: "";
+  width: 250px;
+  height: 4px;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    87deg,
+    rgba(149, 114, 252, 1) 0%,
+    rgba(67, 231, 173, 1) 50%,
+    rgba(226, 212, 92, 1) 100%
+  );
+  z-index: -1;
+  border-radius: 4px;
+  left: 50%;
+  top: 150%;
+  transform: translate(-50%, -50%);
+}
+
+.slide-container {
+  width: 100%;
+  margin-top: 4%;
+}
+
+.slide {
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.containerproje .slide-container {
+  display: none;
+}
+
+.containerproje .slide-container.active {
+  display: block;
+}
+
+/* //ABOUT// */
+
+.container-about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.container-about h1 {
+  color: #ffff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  margin-top: 5%;
+  position: relative;
+}
+
+.container-about h1::before {
+  content: "";
+  width: 100px;
+  height: 4px;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    87deg,
+    rgba(149, 114, 252, 1) 0%,
+    rgba(67, 231, 173, 1) 50%,
+    rgba(226, 212, 92, 1) 100%
+  );
+  z-index: -1;
+  border-radius: 4px;
+  left: 50%;
+  top: 150%;
+  transform: translate(-50%, -50%);
+}
+
+.content-about {
+  max-width: 45%;
+  max-height: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-about {
+  width: 50%;
+  max-height: 20%;
+}
+
+.text-about p {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #ffff;
+}
+
+.img-about {
+  width: 45%;
+}
+
+.img-about img {
+  width: 100%;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.img-about img:hover {
+  transform: scale(1.1);
+}
+
+/* IMAGENS DIFENTRES */
+
+.container-about h2 {
+  color: #ffff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  position: relative;
+}
+
+.container-about h2::before {
+  content: "";
+  width: 250px;
+  height: 4px;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    87deg,
+    rgba(149, 114, 252, 1) 0%,
+    rgba(67, 231, 173, 1) 50%,
+    rgba(226, 212, 92, 1) 100%
+  );
+  z-index: -1;
+  border-radius: 4px;
+  left: 50%;
+  top: 150%;
+  transform: translate(-50%, -50%);
+}
+
+.content-about-left {
+  width: 45%;
+  height: 40%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.text-about-left {
+  width: 50%;
+  max-height: 25%;
+}
+
+.text-about-left p {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #ffff;
+}
+
+.img-about-left {
+  width: 45%;
+}
+
+.img-about-left img {
+  width: 100%;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.img-about-left img:hover {
+  transform: scale(1.1);
+}
+
+/* //MAPA GOOGLE// */
+
+.container-map {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-map h3 {
+  font-size: 3rem;
+  margin-top: 8%;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #ffff;
+  text-align: center;
+  position: relative;
+}
+
+.container-map h3::before {
+  content: "";
+  width: 250px;
+  height: 4px;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    87deg,
+    rgba(149, 114, 252, 1) 0%,
+    rgba(67, 231, 173, 1) 50%,
+    rgba(226, 212, 92, 1) 100%
+  );
+  z-index: -1;
+  border-radius: 4px;
+  left: 50%;
+  top: 150%;
+  transform: translate(-50%, -50%);
+}
+
+.content-map {
+  width: 100%;
+  height: 55%;
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-map iframe {
+  width: 50%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+/* //CONTATO// */
+
+.container-contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-contact h1 {
+  margin-top: 150px;
+  color: #ffff;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+}
+
+.container-contact h1::before {
+  content: "";
+  width: 100px;
+  height: 4px;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    87deg,
+    rgba(149, 114, 252, 1) 0%,
+    rgba(67, 231, 173, 1) 50%,
+    rgba(226, 212, 92, 1) 100%
+  );
+  border-radius: 4px;
+  left: 50%;
+  top: 110%;
+  transform: translate(-50%, -50%);
+}
+
+.content-contact {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  background: linear-gradient(150deg, #000000 99%, #1a1a1a 1%);
+  margin-bottom: 2%;
+  border-radius: 45px;
+  position: relative;
+}
+
+.img-contact {
+  margin-top: 10%;
+  padding: 2rem;
+}
+.img-contact img {
+  width: 100%;
+}
+
+.content-contact .map {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.map iframe {
+  border-radius: 15px;
+  position: relative;
+}
+
+.map::before {
+  content: "";
+  width: 41%;
+  height: 4px;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    87deg,
+    rgba(149, 114, 252, 1) 0%,
+    rgba(67, 231, 173, 1) 50%,
+    rgba(226, 212, 92, 1) 100%
+  );
+  border-radius: 4px;
+  left: 73.5%;
+  top: 72%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.content-contact::before {
+  content: "";
+  width: 101%;
+  height: 101%;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    87deg,
+    rgba(149, 114, 252, 1) 0%,
+    rgba(67, 231, 173, 1) 50%,
+    rgba(226, 212, 92, 1) 100%
+  );
+  border-radius: 50px;
+  left: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.content-contact form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 2rem;
+  gap: 55px;
+  border: none;
+}
+
+form .campo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.campo input {
+  margin: 0.6rem 0;
+  padding: 1.5rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+.campo input::placeholder {
+  color: rgb(21, 20, 22);
+  font-weight: bold;
+}
+
+.campo label {
+  color: #ffff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}

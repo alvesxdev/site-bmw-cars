@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: var(--color-bg-dark);
+}
+
+@font-face {
+  font-family: "InterM";
+  src: url(fonts/Inter/static/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: "InterB";
+  src: url(fonts/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: "MontM";
+  src: url(fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "MontB";
+  src: url(fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+:root {
+  /* // FONTS  SITE // */
+
+  --inter-m: "InterM";
+  --inter-b: "InterB";
+  --mont-m: "MontM";
+  --mont-b: "MontB";
+
+  /* // SITE COLOR PALETTE // */
+
+  --color-primary: #008ffa;
+  --color-header-items: #161616;
+
+  /* // COLOR TEXT <P> // */
+
+  --color-text-p: rgb(14, 14, 14);
+
+  /* // COLOR TEXT TITLES // */
+
+  --color-titles: rgb(0, 164, 230);
+
+  /* // COLOR BACKGOUND SITE // */
+
+  --color-bg-dark: linear-gradient(
+    90deg, 
+    #000000 0%, 
+    #0f0f0f 100%);
+
+  --color-bg-white: linear-gradient(
+    101deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(230, 230, 230, 1) 100%
+  );
+
+  /* // CORLOR BUTTON CARDS CARS // */
+
+  --color-btn-cards-car: rgb(0, 195, 255);
+}

@@ -1,6 +1,6 @@
 # Site BMW STORE
 
-![preview](./.github/henryzxp1dev.github.io_nwl_.png)
+![preview](./.github/henryzxp1dev.github.io_nwl_.jpeg)
 
 >Site BMW STORE
 
